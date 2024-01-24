@@ -34,12 +34,12 @@
     </style>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope p-4 md:p-0">
     <header class="md:w-4/5 md:mx-auto">
-        <nav class="navbar bg-base-100">
+        <nav class="navbar p-0 bg-base-100 my-3 md:my-6 lg:my-10">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -65,7 +65,8 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">Hockey<span class="primary-color">'</span>s</a>
+                <a class="btn btn-ghost font-extrabold text-xl md:text-2xl lg:text-4xl">Hockey<span
+                        class="primary-color">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 ">
@@ -88,11 +89,47 @@
             </div>
             <div class="navbar-end gap-4">
                 <i class="fa-solid fa-magnifying-glass text-[#5e5e64] invisible md:visible"></i>
-                <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+                <a class="btn bg-[#FF4240] text-base md:text-lg lg:text-xl font-bold text-white">Get Ticket</a>
             </div>
         </nav>
 
-        
+        <!-- banner -->
+        <div class="md:relative">
+            <div class="carousel md:h-[400px] w-full">
+                <div id="slide1" class="carousel-item relative w-full md:h-[400px]">
+                    <img src="./Images/banner1.png" class="w-full " />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full md:h-[400px] ">
+                    <img src="./Images/banner4.webp" class="w-full rounded-lg" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full md:h-[400px] ">
+                    <img src="./Images/banner3.jpg" class="w-full rounded-lg" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="md:absolute md:flex md:justify-end md:right-5 md:bottom-6 lg:bottom-8 ">
+                <div class="md:w-1/2 bg-black p-4 lg:p-5 rounded-lg ">
+                    <h3 class="text-white text-base lg:text-xl font-extrabold mb-3 md:mb-2 lg:mb-3">Meet all the heroes
+                        from the field</h3>
+                    <p class="text-[#ffffff99] text-xs lg:text-sm font-medium">Dive into a world of elite athleticism,
+                        where players redefine excellence with passion, skill, and unwavering determination on the
+                        hockey rink.</p>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
