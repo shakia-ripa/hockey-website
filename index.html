@@ -40,6 +40,11 @@
             border-width: 2px;
             border-style: dotted;
         }
+
+        nav>p {
+            color: #ffffff99;
+            font-weight: 500;
+        }
     </style>
 </head>
 
@@ -469,7 +474,7 @@
                                     </label>
                                     <input type="email" placeholder="Enter your full name"
                                         class="input bg-[#13131805] text-para text-sm" required />
-                                </div> 
+                                </div>
                                 <div class="form-control flex-1">
                                     <label class="label">
                                         <span class="label-text text-xl font-bold">Your Email</span>
@@ -508,7 +513,8 @@
                     </div>
                 </div>
 
-                <div class="py-8 my-7 md:mt-8 md:mb-10 lg:mt-10 lg:mb-24 rounded-md bg-[#13131805] flex flex-col justify-center items-center">
+                <div
+                    class="py-8 my-7 md:mt-8 md:mb-10 lg:mt-10 lg:mb-24 rounded-md bg-[#13131805] flex flex-col justify-center items-center">
                     <h4 class="text-xl font-extrabold mb-5">Social Media</h4>
                     <div class="flex gap-5">
                         <i class="fa-brands fa-twitter"></i>
@@ -522,8 +528,40 @@
         </section>
     </main>
 
-    <footer>
+    <footer class=" p-10 bg-black text-base-content">
+        <div class="md:w-4/5 footer mx-auto grid grid-cols-4 gap-4">
+            <nav class="col-span-4 md:col-span-4 lg:col-span-1 flex flex-col mx-auto lg:mx-0 justify-center  items-center lg:items-start lg:block">
+                <h3 class="text-white text-2xl font-extrabold">Get In Touch</h3>
+                <p class="text-[#ffffff99] font-medium text-center lg:text-left my-3">Join the hockey community and never miss a goal! Your passion for hockey is our inspiration – let's keep the spirit of the game alive together! </p>
+                <p class="text-[#ffffff99] font-medium mb-3"><i class="fa-solid fa-phone mr-2 primary-color"></i> hockeys@support.com</p>
+                <p class="text-[#ffffff99] font-medium"><i class="fa-regular fa-envelope mr-2 primary-color"></i>(+62) 123-321-543</p>
+            </nav>
 
+                <nav class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col mx-auto lg:mx-0 justify-center  items-center lg:items-start lg:block space-y-3">
+                    <h6 class=" text-white font-bold">Company</h6>
+                    <p class="link link-hover">About us</p>
+                    <p class="link link-hover">Leadership</p>
+                    <p class="link link-hover">Careers</p>
+                    <p class="link link-hover">News & Article</p>
+                    <p class="link link-hover">Legal Notice</p>
+                </nav>
+                <nav class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col mx-auto lg:mx-0 justify-center  items-center lg:items-start lg:block space-y-3">
+                    <h6 class=" text-white font-bold">Support</h6>
+                    <p class="link link-hover">Help Center</p>
+                    <p class="link link-hover">FAQ</p>
+                    <p class="link link-hover">Ticket Support</p>
+                    <p class="link link-hover">Contact Us</p>
+                </nav>
+
+            <nav class="col-span-4 lg:col-span-1 flex flex-col mx-auto lg:mx-0 justify-center  items-center lg:items-start lg:block space-y-3">
+                <h6 class=" text-white font-bold">Services</h6>
+                <p class="link link-hover">Academy</p>
+                <p class="link link-hover">Group Lesson</p>
+                <p class="link link-hover">Private Lesson</p>
+                <p class="link link-hover">Hockeys for kids</p>
+                <p class="link link-hover">Hockeys for Adult</p>
+            </nav>
+        </div>
     </footer>
 
 </body>
